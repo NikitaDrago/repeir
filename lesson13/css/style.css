@@ -1,0 +1,234 @@
+body {
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 580px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.button {
+  background-color: #ffd200;
+  border-radius: 10px;
+  border: none;
+  padding: 18px 30px;
+}
+
+.button:hover {
+  background-color: #fcde5a;
+}
+
+.navbar {
+  padding: 8px 0;
+}
+
+.navbar-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+}
+
+.navbar__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar__button {
+  margin-left: 30px;
+}
+
+.navbar__phone {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__button {
+    font-size: 12px;
+    padding: 15px 26px;
+    margin-left: 0;
+  }
+  .navbar__logo {
+    width: 96px;
+  }
+}
+
+.warranty {
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+
+.warranty-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.warranty__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.warranty__title {
+  display: block;
+  font-size: 41px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.warranty__subtitle {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.warranty__dsc {
+  width: 300px;
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.warranty__dsc-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.warranty__dsc-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.warranty__dsc-text {
+  margin-left: 15px;
+}
+
+.warranty__image {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  width: 570px;
+  height: 488px;
+}
+
+@media (max-width: 768px) {
+  .warranty-block {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .warranty__text {
+    width: 100%;
+  }
+  .warranty__image {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .warranty-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .warranty__title {
+    font-size: 24px;
+  }
+  .warranty__subtitle {
+    font-size: 16px;
+  }
+  .warranty__dsc-text {
+    font-size: 12px;
+  }
+  .warranty__image {
+    width: 270px;
+    height: 231px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .warranty__image img {
+    width: 270px;
+    height: 231px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
