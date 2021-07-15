@@ -354,6 +354,10 @@ img {
 }
 
 @media (max-width: 768px) {
+  .form {
+    padding-top: 53px;
+    padding-bottom: 55px;
+  }
   .form__wrapper {
     text-align: left;
     width: 95%;
@@ -393,6 +397,92 @@ img {
   }
   .form__phone {
     line-height: 24px;
+  }
+}
+
+.about {
+  background: url("../img/points.png") no-repeat;
+  background-position: center left;
+  background-size: 50% 100%;
+  position: relative;
+  min-width: 320px;
+  background-color: #f5f5f5;
+  padding: 100px 0;
+  color: #333333;
+}
+
+.about__text {
+  text-align: center;
+}
+
+.about__title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.about__photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+.about__arrow {
+  width: 120px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about .img {
+  width: 370px;
+  height: 280px;
+}
+
+.arrow {
+  width: 45px;
+  height: 19px;
+}
+
+@media (max-width: 1200px) {
+  .about {
+    background: none #f5f5f5;
+    padding-top: 43px;
+    padding-bottom: 65px;
+  }
+  .about__photos {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 40px 0;
+  }
+  .about__img-3 {
+    display: none;
+  }
+  .about__title {
+    font-size: 18px;
+  }
+  .img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 246px;
+    height: 186px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__img-2 {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
