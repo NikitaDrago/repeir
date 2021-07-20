@@ -1,0 +1,36 @@
+.documents
+    padding-bottom: 230px
+    min-width: 320px
+    &__title
+        display: block
+        margin: auto
+        text-align: center
+        font-size: 30px
+        font-weight: 700
+        line-height: 45px
+        width: 60%
+    &-wrapper
+        display: flex
+        justify-content: space-around
+        margin-top: 100px
+    &-block
+        width: 270px
+        &__info
+            text-align: center
+            display: block
+            margin: auto
+            width: 80%
+            margin-top: 40px
+
+@media(max-width: 1200px)
+    .documents
+        &-wrapper
+            flex-direction: column
+            align-items: center
+            margin-top: 40px
+            font-size: 18px
+            line-height: normal
+        &-block
+            &__info
+                margin-top: 30px
+                margin-bottom: 50px
