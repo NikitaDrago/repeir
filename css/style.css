@@ -741,4 +741,26 @@ img {
             flex-direction: column;
   }
 }
+
+.attention {
+  background-color: #ffd200;
+  padding: 90px 0;
+  min-width: 320px;
+}
+
+.attention__text {
+  text-align: center;
+  font-size: 32px;
+  line-height: 50px;
+}
+
+@media (max-width: 768px) {
+  .attention__text {
+    display: block;
+    width: 255px;
+    margin: auto;
+    font-size: 18px;
+    line-height: normal;
+  }
+}
 /*# sourceMappingURL=style.css.map */
