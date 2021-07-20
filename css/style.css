@@ -829,6 +829,10 @@ img {
     height: 307px;
     margin-bottom: 30px;
   }
+  .support-block__img {
+    width: 277px;
+    height: 195px;
+  }
   .support-block__description {
     width: 77%;
     font-size: 12px;
@@ -882,6 +886,8 @@ img {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 40px;
+  }
+  .documents__title {
     font-size: 18px;
     line-height: normal;
   }
