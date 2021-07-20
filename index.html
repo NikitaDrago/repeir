@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson13</title>
+    <title>repeir</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,7 +17,7 @@
                 <div class="navbar__logo">
                     <img src="img/logo.svg" alt="">
                 </div>
-                <div class="navbar__info">
+                <div class="navbar-info">
                     <div class="navbar__contacts">
                         <span class="navbar__address">Калуга, Москва, МО</span>
                         <a href="tel:+7(495)4225131" class="navbar__phone">+7 (495) 42-251-31</a>
@@ -27,230 +27,236 @@
             </div>
         </div>
     </nav>
-    <section class="warranty">
-        <div class="container">
-            <div class="warranty-block">
-                <div class="warranty__text">
-                    <h2 class="warranty__title">Внутрення отделка помещений "под ключ"</h2>
-                    <span class="warranty__subtitle">с гарантией качества, прописанной в договоре</span>
+    <main>
+        <section class="warranty">
+            <div class="container">
+                <div class="warranty-block">
+                    <div class="warranty-text">
+                        <h2 class="warranty-text__title">Внутрення отделка помещений "под ключ"</h2>
+                        <span class="warranty-text__subtitle">с гарантией качества, прописанной в договоре</span>
 
-                    <div class="warranty__dsc">
-                        <div class="warranty__dsc-item">
-                            <img src="img/clock.svg" alt="" class="warranty_dsc-icon">
-                            <p class="warranty__dsc-text">Точно соблюдаем сроки</p>
+                        <div class="warranty-list">
+                            <div class="warranty-item">
+                                <img src="img/clock.svg" alt="" class="warranty-item__icon">
+                                <p class="warranty-item__text">Точно соблюдаем сроки</p>
+                            </div>
+                            <div class="warranty-item">
+                                <img src="img/calculator.svg" alt="" class="warranty-item__icon">
+                                <p class="warranty-item__text">Рассчитаем смету на работы и материалы в день обращения
+                                </p>
+                            </div>
+                            <div class="warranty-item">
+                                <img src="img/paint-board.svg" alt="" class="warranty-item__icon">
+                                <p class="warranty-item__text">Предложим более 100 вариантов исполнения дизайна Вашего
+                                    жилья
+                                </p>
+                            </div>
                         </div>
-                        <div class="warranty__dsc-item">
-                            <img src="img/calculator.svg" alt="" class="warranty_dsc-icon">
-                            <p class="warranty__dsc-text">Рассчитаем смету на работы и материалы в день обращения</p>
-                        </div>
-                        <div class="warranty__dsc-item">
-                            <img src="img/paint-board.svg" alt="" class="warranty_dsc-icon">
-                            <p class="warranty__dsc-text">Предложим более 100 вариантов исполнения дизайна Вашего жилья
+                    </div>
+                    <div class="warranty-image">
+                        <img src="img/room.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form">
+            <div class="container">
+                <div class="form__wrapper">
+                    <div class="form__text">
+                        <h2 class="form__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
+                        </h2>
+                        <span class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
+                        <input type="text" class="input form__input form__input-data" placeholder="Ваше имя">
+                        <input type="tel" class="input form__input" placeholder="Ваш телефон">
+                        <button class="button form__button">Получить бесплатный дизайн-проект</button>
+                        <div class="form__data">
+                            <p class="form__info">Наш менеджер перезвонит Вам в течение 60 секунд</span>
+                            <p class="form__info">или перезвоните нам сами
+                                <a href="tel:+7 (495) 42-251-31" class="a form__phone">+7 (495) 42-251-31</a>
                             </p>
                         </div>
-                    </div>
-                </div>
-                <div class="warranty__image">
-                    <img src="img/room.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="form">
-        <div class="container">
-            <div class="form__wrapper">
-                <div class="form__text">
-                    <h2 class="form__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
-                    <span class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
-                    <input type="text" class="input form__input form__input-data" placeholder="Ваше имя">
-                    <input type="tel" class="input form__input" placeholder="Ваш телефон">
-                    <button class="button form__button">Получить бесплатный дизайн-проект</button>
-                    <div class="form__data">
-                        <p class="form__info">Наш менеджер перезвонит Вам в течение 60 секунд</span>
-                        <p class="form__info">или перезвоните нам сами
-                            <a href="tel:+7 (495) 42-251-31" class="a form__phone">+7 (495) 42-251-31</a>
-                        </p>
-                    </div>
 
+                    </div>
+                </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="about__wrapper">
+                    <div class="about__text">
+                        <h2 class="about__title">Работая с 2007 года,<br> мы сделали более 500 ремонтов в квартирах и
+                            домах</h2>
+                    </div>
+                    <div class="about__photos">
+                        <img class="img about__img-1" src="img/picture-1.jpg" alt="">
+                        <img class="img about__img-2" src="img/picture-2.jpg" alt="">
+                        <img class="img about__img-3" src="img/picture-3.jpg" alt="">
+                    </div>
+                    <div class="about__arrow">
+                        <img class="arrow" src="img/left-arrow.png" alt="">
+                        <img class="arrow" src="img/right-arrow.png" alt="">
+                    </div>
                 </div>
             </div>
-    </section>
-    <section class="about">
-        <div class="container">
-            <div class="about__wrapper">
-                <div class="about__text">
-                    <h2 class="about__title">Работая с 2007 года,<br> мы сделали более 500 ремонтов в квартирах и
-                        домах</h2>
+        </section>
+        <section class="price">
+            <div class="container">
+                <div class="price__text">
+                    <h2 class="price__title">У нас очень гибка система скидок на комплексные работы!</h2>
+                    <span class="price__subtitle">Прайс на наши услуги</span>
                 </div>
-                <div class="about__photos">
-                    <img class="img about__img-1" src="img/picture-1.jpg" alt="">
-                    <img class="img about__img-2" src="img/picture-2.jpg" alt="">
-                    <img class="img about__img-3" src="img/picture-3.jpg" alt="">
+                <div class="price__wrapper">
+                    <div class="price-block">
+                        <div class="price-block__img">
+                            <img src="img/price-photo-1.jpg" alt="" class="price__img">
+                        </div>
+                        <div class="price-block__text">
+                            <strong class="price__info">Ремонт ванных комнат и с/у</strong>
+                            <div class="price-link">
+                                <a href="" class="a price-link__button">Узнать цены</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-block">
+                        <div class="price-block__img">
+                            <img src="img/price-photo-2.jpg" alt="" class="price__img">
+                        </div>
+                        <div class="price-block__text">
+                            <strong class="price__info">Ремонт комнат и квартир</strong>
+                            <div class="price-link">
+                                <a href="" class="a price-link__button">Узнать цены</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-block">
+                        <div class="price-block__img">
+                            <img src="img/price-photo-3.jpg" alt="" class="price__img">
+                        </div>
+                        <div class="price-block__text">
+                            <strong class="price__info">Отделка офисных помещений</strong>
+                            <div class="price-link">
+                                <a href="" class="a price-link__button">Узнать цены</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-block">
+                        <div class="price-block__img">
+                            <img src="img/price-photo-4.jpg" alt="" class="price__img">
+                        </div>
+                        <div class="price-block__text">
+                            <strong class="price__info">Ремонт в новостройках</strong>
+                            <div class="price-link">
+                                <a href="" class="a price-link__button">Узнать цены</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-block">
+                        <div class="price-block__img">
+                            <img src="img/price-photo-5.jpg" alt="" class="price__img">
+                        </div>
+                        <div class="price-block__text">
+                            <strong class="price__info">Ремонт кухонь</strong>
+                            <div class="price-link">
+                                <a href="" class="a price-link__button">Узнать цены</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-block">
+                        <div class="price-block__img">
+                            <img src="img/price-photo-6.jpg" alt="" class="price__img">
+                        </div>
+                        <div class="price-block__text">
+                            <strong class="price__info">Ремонт дач и коттеджей</strong>
+                            <div class="price-link">
+                                <a href="" class="a price-link__button">Узнать цены</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="about__arrow">
-                    <img class="arrow" src="img/left-arrow.png" alt="">
-                    <img class="arrow" src="img/right-arrow.png" alt="">
+        </section>
+        <section class="steps">
+            <div class="container">
+                <h2 class="steps__title">Наши специалисты готовы выехать на замеры любое удобное для Вас время</h2>
+                <span class="steps__subtitle">5 шагов до ремонта</span>
+                <div class="steps__wrapper">
+                    <div class="steps-block">
+                        <img src="img/step-icon-1.svg" alt="" class="step-block__icon">
+                        <p class="steps-block__info">Вы звоните нам или оставляете заявку </p>
+                    </div>
+                    <img src="img/step-arrow.svg" alt="" class="steps-block__arrow">
+                    <div class="steps-block">
+                        <img src="img/step-icon-2.svg" alt="" class="step-block__icon">
+                        <p class="steps-block__info">Согласуем удобное для Вас время выезда специалиста на замер</p>
+                    </div>
+                    <img src="img/step-arrow.svg" alt="" class="steps-block__arrow">
+                    <div class="steps-block">
+                        <img src="img/step-icon-3.svg" alt="" class="step-block__icon">
+                        <p class="steps-block__info">Рассчитываем смету согласовываем с Вами</p>
+                    </div>
+                    <img src="img/step-arrow.svg" alt="" class="steps-block__arrow">
+                    <div class="steps-block">
+                        <img src="img/step-icon-4.svg" alt="" class="step-block__icon">
+                        <p class="steps-block__info">Подписываем договор закупаем материал по оптовым ценам</p>
+                    </div>
+                    <img src="img/step-arrow.svg" alt="" class="steps-block__arrow">
+                    <div class="steps-block">
+                        <img src="img/step-icon-5.svg" alt="" class="step-block__icon">
+                        <p class="steps-block__info">Выполняем ремонт в указанные сроки</p>
+                    </div>
                 </div>
             </div>
+        </section>
+        <section class="attention">
+            <div class="container">
+                <p class="attention__text">Ремонт обойдется Вам дешевле, так как<br> мы используем качественные
+                    материалы
+                    по оптовым ценам</p>
+            </div>
+        </section>
+        <section class="support">
+            <div class="container">
+                <div class="support__wrapper">
+                    <div class="support-block">
+                        <span class="support-block__description">Поможем закупить все материалы
+                            по оптовым ценам у проверенных поставщиков</span>
+                        <img src="img/support-photo-1.png" alt="" class="support-block__img">
+                    </div>
+                    <div class="support-block">
+                        <span class="support-block__description">Мы дадим Вам <b> максимальные скидки</b>
+                            у наших партнеров для закупки материалов оптом</span>
+                        <img src="img/support-photo-2.png" alt="" class="support-block__img">
+                    </div>
+                    <div class="support-block">
+                        <span class="support-block__description">Все, что не сможете найти в городе -
+                            поможем заказать <b>у проверенных поставщиков</b></span>
+                        <img src="img/support-photo-3.png" alt="" class="support-block__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="documents">
+            <div class="container">
+                <h2 class="documents__title">Все наши гарантийные обязательства
+                    подробно и прозрачно описаны в договоре</h2>
+                <div class="documents-wrapper">
+                    <div class="documents-block">
+                        <img src="img/document-1.jpg" alt="" class="documents-block__img">
+                        <span class="documents-block__info">Гарантия на качество выполняемых работ</span>
+                    </div>
+                    <div class="documents-block">
+                        <img src="img/document-2.jpg" alt="" class="documents-block__img">
+                        <span class="documents-block__info">Гарантия на фиксированные цены
+                            Виды работ и цены на них прописаны в договоре</span>
+                    </div>
+                    <div class="documents-block">
+                        <img src="img/document-3.jpg" alt="" class="documents-block__img">
+                        <span class="documents-block__info">Гарантия на точное соблюдение
+                            сроков и ответственность за их невыполнение</span>
+                    </div>
+                </div>
+            </div>
+        </section>
         </div>
-    </section>
-    <section class="price">
-        <div class="container">
-            <div class="price__text">
-                <h2 class="price__title">У нас очень гибка система скидок на комплексные работы!</h2>
-                <span class="price__subtitle">Прайс на наши услуги</span>
-            </div>
-            <div class="price__wrapper">
-                <div class="price-block">
-                    <div class="price-block__img">
-                        <img src="img/price-photo-1.jpg" alt="" class="price__img">
-                    </div>
-                    <div class="price-block__text">
-                        <strong class="price__info">Ремонт ванных комнат и с/у</strong>
-                        <div class="price-link">
-                            <a href="" class="a price-link__button">Узнать цены</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="price-block">
-                    <div class="price-block__img">
-                        <img src="img/price-photo-2.jpg" alt="" class="price__img">
-                    </div>
-                    <div class="price-block__text">
-                        <strong class="price__info">Ремонт комнат и квартир</strong>
-                        <div class="price-link">
-                            <a href="" class="a price-link__button">Узнать цены</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="price-block">
-                    <div class="price-block__img">
-                        <img src="img/price-photo-3.jpg" alt="" class="price__img">
-                    </div>
-                    <div class="price-block__text">
-                        <strong class="price__info">Отделка офисных помещений</strong>
-                        <div class="price-link">
-                            <a href="" class="a price-link__button">Узнать цены</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="price-block">
-                    <div class="price-block__img">
-                        <img src="img/price-photo-4.jpg" alt="" class="price__img">
-                    </div>
-                    <div class="price-block__text">
-                        <strong class="price__info">Ремонт в новостройках</strong>
-                        <div class="price-link">
-                            <a href="" class="a price-link__button">Узнать цены</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="price-block">
-                    <div class="price-block__img">
-                        <img src="img/price-photo-5.jpg" alt="" class="price__img">
-                    </div>
-                    <div class="price-block__text">
-                        <strong class="price__info">Ремонт кухонь</strong>
-                        <div class="price-link">
-                            <a href="" class="a price-link__button">Узнать цены</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="price-block">
-                    <div class="price-block__img">
-                        <img src="img/price-photo-6.jpg" alt="" class="price__img">
-                    </div>
-                    <div class="price-block__text">
-                        <strong class="price__info">Ремонт дач и коттеджей</strong>
-                        <div class="price-link">
-                            <a href="" class="a price-link__button">Узнать цены</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section class="steps">
-        <div class="container">
-            <h2 class="steps__title">Наши специалисты готовы выехать на замеры любое удобное для Вас время</h2>
-            <span class="steps__subtitle">5 шагов до ремонта</span>
-            <div class="steps__wrapper">
-                <div class="steps-block">
-                    <img src="img/step-icon-1.svg" alt="" class="step-block__icon">
-                    <p class="steps-block__info">Вы звоните нам или оставляете заявку </p>
-                </div>
-                <img src="img/step-arrow.svg" alt="" class="steps-block__arrow">
-                <div class="steps-block">
-                    <img src="img/step-icon-2.svg" alt="" class="step-block__icon">
-                    <p class="steps-block__info">Согласуем удобное для Вас время выезда специалиста на замер</p>
-                </div>
-                <img src="img/step-arrow.svg" alt="" class="steps-block__arrow">
-                <div class="steps-block">
-                    <img src="img/step-icon-3.svg" alt="" class="step-block__icon">
-                    <p class="steps-block__info">Рассчитываем смету согласовываем с Вами</p>
-                </div>
-                <img src="img/step-arrow.svg" alt="" class="steps-block__arrow">
-                <div class="steps-block">
-                    <img src="img/step-icon-4.svg" alt="" class="step-block__icon">
-                    <p class="steps-block__info">Подписываем договор закупаем материал по оптовым ценам</p>
-                </div>
-                <img src="img/step-arrow.svg" alt="" class="steps-block__arrow">
-                <div class="steps-block">
-                    <img src="img/step-icon-5.svg" alt="" class="step-block__icon">
-                    <p class="steps-block__info">Выполняем ремонт в указанные сроки</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="attention">
-        <div class="container">
-            <p class="attention__text">Ремонт обойдется Вам дешевле, так как<br> мы используем качественные материалы
-                по оптовым ценам</p>
-        </div>
-    </section>
-    <section class="support">
-        <div class="container">
-            <div class="support__wrapper">
-                <div class="support-block">
-                    <span class="support-block__description">Поможем закупить все материалы
-                        по оптовым ценам у проверенных поставщиков</span>
-                    <img src="img/support-photo-1.png" alt="" class="support-block__img">
-                </div>
-                <div class="support-block">
-                    <span class="support-block__description">Мы дадим Вам <b> максимальные скидки</b>
-                        у наших партнеров для закупки материалов оптом</span>
-                    <img src="img/support-photo-2.png" alt="" class="support-block__img">
-                </div>
-                <div class="support-block">
-                    <span class="support-block__description">Все, что не сможете найти в городе -
-                        поможем заказать <b>у проверенных поставщиков</b></span>
-                    <img src="img/support-photo-3.png" alt="" class="support-block__img">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="documents">
-        <div class="container">
-            <h2 class="documents__title">Все наши гарантийные обязательства
-                подробно и прозрачно описаны в договоре</h2>
-            <div class="documents-wrapper">
-                <div class="documents-block">
-                    <img src="img/document-1.jpg" alt="" class="documents-block__img">
-                    <span class="documents-block__info">Гарантия на качество выполняемых работ</span>
-                </div>
-                <div class="documents-block">
-                    <img src="img/document-2.jpg" alt="" class="documents-block__img">
-                    <span class="documents-block__info">Гарантия на фиксированные цены
-                        Виды работ и цены на них прописаны в договоре</span>
-                </div>
-                <div class="documents-block">
-                    <img src="img/document-3.jpg" alt="" class="documents-block__img">
-                    <span class="documents-block__info">Гарантия на точное соблюдение 
-                        сроков и ответственность за их невыполнение</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    </div>
+    </main>
 </body>
 
 </html>
