@@ -1,8 +1,7 @@
 .price
     min-width: 320px
-    &__wrapper
-        text-align: center
-        padding: 100px 0
+    padding: 100px 0
+    text-align: center
     &__text
         display: flex
         align-items: center
@@ -12,22 +11,83 @@
         font-size: 30px
         font-weight: 700
     &__subtitle
+        font-size: 20px
+        font-weight: 400
         margin: 58px 0
-    &__photo
+    &__wrapper
+        text-align: center
+        padding-top: 60px
+        padding-bottom: 160px
         display: flex
         justify-content: space-between
         flex-wrap: wrap
-        &-block
-            width: 370px
-            height: 410px
-            border: 1px solid #e8e8e8
-            margin-bottom: 30px
+    &-block
+        border: 1px solid #f0f0f0
+        margin-bottom: 25px
+        &:hover
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
+            .price-block__img:before
+                opacity: 1
+        &__img
+            position: relative
+            &::before
+                content: ''
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                position: absolute
+                opacity: 0
+                background-image: linear-gradient(to top, $main-color 0, rgba(255, 255, 255, 0) 100)
+                transition: 0.5s
+        &__text
+            padding: 50px
+    &-link
+        &:hover
+            .price-link_tag
+                opacity: 1
+        &__button
+            font-size: 16px
+            font-weight: 700
+            position: 1
+            position: relative
+            &::after
+                content: ''
+                width: 100%
+                height: 3px
+                left: 0
+                position: absolute
+                display: block
+                bottom: -4px
+                z-index: -1
+                background-color: $main-color
+                transition: 0.2s
+            &:hover::after
+                height: 13px
+
     &__info
+        display: block
         font-size: 18px
         font-weight: 500
-        margin-top: 39px
-        margin-bottom: 31px
-    &__button
-        font-size: 16px
-        font-weight: 700
-        text-decoration: 3px solid underline $main-color
+        margin-bottom: 30px
+
+    &__img
+        width: 370px
+        height: 260px
+
+@media(max-width: 768px)
+    .price
+        padding: 55px 0
+        &__title
+            font-size: 18px
+            width: 242px
+        &__subtitle
+            font-size: 14px
+            margin-top: 27px
+            margin-bottom: 60px
+        &__wrapper
+            padding: 0
+            flex-direction: column
+            align-items: center
+        &-block
+            margin-bottom: 30px
