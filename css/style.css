@@ -197,6 +197,9 @@ img {
 }
 
 @media (max-width: 768px) {
+  .warranty {
+    padding-bottom: 30px;
+  }
   .warranty-block {
     width: 100%;
     display: -webkit-box;
@@ -207,40 +210,23 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .warranty__text {
+  .warranty-text {
     width: 100%;
   }
-  .warranty__image {
-    width: auto;
-    height: auto;
-  }
-}
-
-@media (max-width: 320px) {
-  .warranty-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .warranty__title {
+  .warranty-text__title {
     font-size: 24px;
   }
-  .warranty__subtitle {
+  .warranty-text__subtitle {
     font-size: 16px;
   }
-  .warranty__dsc-text {
-    font-size: 12px;
-  }
-  .warranty__image {
+  .warranty-image {
     width: 270px;
     height: 231px;
     margin-top: 35px;
     margin-bottom: 35px;
   }
-  .warranty__image img {
-    width: 270px;
-    height: 231px;
+  .warranty-item__text {
+    font-size: 12px;
   }
 }
 
