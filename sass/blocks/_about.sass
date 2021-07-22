@@ -6,12 +6,11 @@
     min-width: 320px
     background-color: $block-color
     padding: 100px 0
-    color: $text-color
     &__text
         text-align: center
     &__title
         font-size: 30px
-        font-weight: 700
+        +bold
         margin: 0
     &__photos
         display: flex
@@ -23,7 +22,6 @@
         margin: auto
         display: flex
         justify-content: space-between
-
     & .img
         width: 370px
         height: 280px
