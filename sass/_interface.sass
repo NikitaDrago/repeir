@@ -1,5 +1,8 @@
+*
+    box-sizing: border-box
 body
-    font-family: sans-serif
+    +light
+    color: $text-color
 img
     max-width: 100%
 .container
@@ -12,8 +15,15 @@ img
 .a
     text-decoration: none
     color: $text-color
-
-
+.button
+    background-color: $main-color
+    border-radius: 10px
+    border: none
+    padding: 18px 30px
+.button:hover
+    background-color: lighten($main-color, 10%)
+    cursor: pointer
+    
 @media(max-width: 1200px)
     .container
         width: 760px
@@ -24,10 +34,3 @@ img
 @media(max-width: 320px)
     .container
         width: 90%
-.button
-    background-color: $main-color
-    border-radius: 10px
-    border: none
-    padding: 18px 30px
-.button:hover
-    background-color: $button-hover
