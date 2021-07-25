@@ -971,4 +971,40 @@ img {
   top: 0;
   right: 0;
 }
+
+.scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  border: 1px solid #ffd200;
+  border-radius: 100%;
+  background: #ffd200;
+  height: 45px;
+  width: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.scroll:hover {
+  cursor: pointer;
+}
+
+.scroll__img {
+  height: 35px;
+  width: 35px;
+}
+
+.arrow_up {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
 /*# sourceMappingURL=style.css.map */
