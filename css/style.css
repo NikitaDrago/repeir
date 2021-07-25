@@ -57,6 +57,17 @@ img {
   cursor: pointer;
 }
 
+.owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 120px;
+  margin: auto;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 760px;
@@ -456,25 +467,8 @@ img {
 }
 
 .about__photos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-top: 100px;
   margin-bottom: 70px;
-}
-
-.about__arrow {
-  width: 120px;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .about .img {
@@ -482,9 +476,15 @@ img {
   height: 280px;
 }
 
-.arrow {
-  width: 45px;
-  height: 19px;
+.owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 120px;
+  margin: auto;
 }
 
 @media (max-width: 1200px) {
@@ -493,31 +493,8 @@ img {
     padding-top: 43px;
     padding-bottom: 65px;
   }
-  .about__photos {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: 40px 0;
-  }
-  .about__img-3 {
-    display: none;
-  }
   .about__title {
     font-size: 18px;
-  }
-  .img {
-    margin-right: 10px;
-    margin-bottom: 10px;
-    width: 246px;
-    height: 186px;
-  }
-}
-
-@media (max-width: 768px) {
-  .about__img-2 {
-    display: none;
   }
 }
 
@@ -981,7 +958,7 @@ img {
   left: 30px;
   border: 1px solid #ffd200;
   border-radius: 100%;
-  background: #ffd200;
+  background: #ffe466;
   height: 45px;
   width: 45px;
   -webkit-box-align: center;
@@ -992,10 +969,13 @@ img {
           justify-content: center;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .scroll:hover {
   cursor: pointer;
+  background: #ffd200;
 }
 
 .scroll__img {
@@ -1004,6 +984,8 @@ img {
 }
 
 .arrow_up {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }

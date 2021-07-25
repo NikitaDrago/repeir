@@ -13,40 +13,21 @@
         +bold
         margin: 0
     &__photos
-        display: flex
-        justify-content: space-between
         margin-top: 100px
         margin-bottom: 70px
-    &__arrow
-        width: 120px
-        margin: auto
-        display: flex
-        justify-content: space-between
     & .img
         width: 370px
         height: 280px
-.arrow
-    width: 45px
-    height: 19px
+.owl-nav
+    display: flex
+    justify-content: space-between
+    max-width: 120px
+    margin: auto
+    
 @media(max-width: 1200px)
     .about
         background: none $block-color
         padding-top: 43px
         padding-bottom: 65px
-        &__photos
-            justify-content: center
-            flex-wrap: wrap
-            margin: 40px 0
-        &__img-3
-            display: none
         &__title
             font-size: 18px
-    .img
-        margin-right: 10px
-        margin-bottom: 10px
-        width: 246px
-        height: 186px
-@media(max-width: 768px)
-    .about
-        &__img-2
-            display: none
