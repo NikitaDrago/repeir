@@ -9,6 +9,7 @@
     &-text
         flex-basis: 50%
         padding-right: 100px
+        animation: fadeInLeft 1.5s cubic-bezier(0, 0.55, 0.45, 1)
         &__title
             display: block
             font-size: 41px
@@ -21,6 +22,9 @@
             margin-bottom: 70px
             font-size: 20px
             +bold
+    &-image
+        & img
+            animation: fadeInRight 1.5s
     &-list
         margin: 0
         padding: 0
@@ -61,7 +65,7 @@
                 font-size: 16px
                 margin-bottom: 28px
         &-image
-            
+
             margin-bottom: 35px
         &-item
             margin-bottom: 20px

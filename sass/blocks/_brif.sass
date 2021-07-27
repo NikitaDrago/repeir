@@ -1,0 +1,49 @@
+.brif
+    background-image: url('../img/brif-bcg-1.jpg'), url('../img/brif-room.jpg') 
+    background-position: left center, center right
+    background-size: 50%, contain
+    background-repeat: repeat-y, no-repeat
+    min-width: 320px
+    &-wrapper
+        display: flex
+        justify-content: space-around
+    &-help
+        margin-right: 70px
+        padding: 100px 0
+        position: relative
+        flex-basis: 50%
+        &__title
+            display: block
+            +bold
+            font-size: 22px
+            max-width: 515px
+            margin-bottom: 50px
+            min-width: 216px
+        &__subtitle
+            font-size: 16px
+            min-width: 300px
+    &-form
+        background-color: $block-color
+        flex-basis: 50%
+        &__title
+            +bold
+            font-size: 22px
+            min-width: 336px
+        &__subtitle
+            font-size: 16px
+
+.help
+    &-list
+        margin-top: 95px
+        list-style-type: none
+        &__item
+            display: flex
+            align-items: center
+            margin-bottom: 25px
+            &:last-child
+                margin-bottom: 0
+        &__text
+            +bold
+            margin-left: 32px
+            max-width: 379px
+            font-size: 18px

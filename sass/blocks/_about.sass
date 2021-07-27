@@ -12,18 +12,30 @@
         font-size: 30px
         +bold
         margin: 0
+        animation: fadeInUp 1.5s
     &__photos
         margin-top: 100px
         margin-bottom: 70px
     & .img
         width: 370px
         height: 280px
+    &_animate_1
+        animation: bounceInLeft 1.5s
+    &_animate_2
+        animation: bounce 1.5s
+    &_animate_3
+        animation: bounceInRight 1.5s
 .owl-nav
     display: flex
     justify-content: space-between
     max-width: 120px
     margin: auto
-    
+.owl-prev
+    animation: fadeInUp 1.5s
+.owl-next
+    animation: fadeInUp 1.5s
+.owl-stage
+    margin-bottom: 40px
 @media(max-width: 1200px)
     .about
         background: none $block-color

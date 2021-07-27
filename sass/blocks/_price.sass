@@ -11,9 +11,11 @@
         font-size: 30px
         +bold
         margin: 0
+        animation: fadeInUp 2s
     &__subtitle
         font-size: 20px
         margin: 58px 0
+        animation: fadeInUp 2s
     &-wrapper
         text-align: center
         padding-top: 60px
@@ -26,6 +28,7 @@
         margin-bottom: 25px
         &:hover
             box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
+            transition: 0.5s
             .price-block__img:before
                 opacity: 1
         &__img
@@ -61,7 +64,7 @@
                 bottom: -4px
                 z-index: -1
                 background-color: $main-color
-                transition: 0.2s
+                transition: 0.3s
             &:hover::after
                 height: 13px
 
