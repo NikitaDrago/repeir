@@ -1035,7 +1035,6 @@ img {
 }
 
 .brif-help__title {
-  display: block;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   font-size: 22px;
@@ -1047,11 +1046,10 @@ img {
 
 .brif-help__subtitle {
   font-size: 16px;
-  min-width: 300px;
 }
 
 .brif-form {
-  width: 368px;
+  max-width: 368px;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding: 100px 0;
@@ -1083,11 +1081,6 @@ img {
 
 .brif-form__input {
   width: 370px;
-  margin-bottom: 15px;
-}
-
-.brif-form__input:last-child {
-  margin-bottom: 30px;
 }
 
 .brif-form__input:focus {
@@ -1095,16 +1088,27 @@ img {
   border-color: #ffd200;
 }
 
+.brif-form__input_data {
+  margin-bottom: 15px;
+}
+
 .brif-form__button {
   width: 370px;
   height: 70px;
-  margin: 30px 0;
+  margin-top: 30px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  font-size: 18px;
+}
+
+.brif-form__description {
+  font-size: 15px;
+  margin-top: 33px;
+  margin-bottom: 0;
 }
 
 .help-list {
-  margin-top: 95px;
+  margin-top: 103px;
   list-style-type: none;
   padding: 0;
 }
@@ -1129,5 +1133,84 @@ img {
   margin-left: 32px;
   max-width: 379px;
   font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  .brif {
+    background-size: 50%, cover;
+  }
+  .brif-form__input {
+    width: 290px;
+  }
+  .brif-form__button {
+    width: 290px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brif {
+    background-image: url("../img/brif-bcg-1.jpg"), url("../img/brif-room.jpg");
+    background-position: center top, center bottom;
+    background-size: auto, auto;
+    background-repeat: no-repeat, no-repeat;
+  }
+  .brif-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .brif-help {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 85px;
+  }
+  .brif-help__title {
+    font-size: 18px;
+    max-width: 220px;
+    margin-bottom: 16px;
+  }
+  .brif-help__subtitle {
+    font-size: 14px;
+    width: 65%;
+  }
+  .brif-form {
+    padding-top: 80px;
+  }
+  .brif-form__title {
+    font-size: 18px;
+  }
+  .brif-form__subtitle {
+    font-size: 14px;
+  }
+  .brif-form__input {
+    width: 275px;
+  }
+  .brif-form__button {
+    width: 275px;
+    font-size: 14px;
+  }
+  .brif-form__description {
+    font-size: 14px;
+    max-width: 135px;
+  }
+  .help-list {
+    margin-top: 51px;
+  }
+  .help-list__text {
+    max-width: 231px;
+    margin-left: 8px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
