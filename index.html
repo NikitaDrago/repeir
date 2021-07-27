@@ -69,9 +69,13 @@
                         <h2 class="form__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
                         </h2>
                         <span class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
-                        <input type="text" class="input form__input form__input_data" placeholder="Ваше имя">
-                        <input type="tel" class="input form__input" placeholder="Ваш телефон">
-                        <button class="button form__button">Получить бесплатный дизайн-проект</button>
+                        <form action="#" id="form">
+                            <input type="text" name="username" pattern="[А-Яа-яЁё]"
+                                class="input form__input form__input_data" placeholder="Ваше имя">
+                            <input type="tel" name="phone" pattern="2-[0-9]{3}-[0-9]{3}" class="input form__input"
+                                placeholder="Ваш телефон">
+                            <button class="button form__button">Получить бесплатный дизайн-проект</button>
+                        </form>
                         <div class="form-data">
                             <p class="form-data__info">Наш менеджер перезвонит Вам в течение 60 секунд</span>
                             <p class="form-data__info">или перезвоните нам сами
@@ -297,10 +301,14 @@
                         <h3 class="brif-form__title">Оставьте заявку на бесплатный
                             расчет ремонта по телефону</h3>
                         <span class="brif-form__subtitle">Для этого заполните форму ниже</span>
-                        <input type="text" class="input brif-form__input brif-form__input_data" placeholder="Ваше имя">
-                        <input type="tel" class="input brif-form__input" placeholder="Ваш телефон">
-                        <button class="button brif-form__button">Рассчитать стоимость</button>
-                        <p class="brif-form__description">Мы перезвоним Вам в течение 60 секунд</p>
+                        <form action="#" id='brif-form'>
+                            <input type="text" name="username" pattern="[А-Яа-яЁё]"
+                                class="input brif-form__input brif-form__input_data" placeholder="Ваше имя">
+                            <input type="tel" name="phone" pattern="2-[0-9]{3}-[0-9]{3}" class="input brif-form__input"
+                                placeholder="Ваш телефон">
+                            <button class="button brif-form__button">Рассчитать стоимость</button>
+                            <p class="brif-form__description">Мы перезвоним Вам в течение 60 секунд</p>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -323,8 +331,65 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script>
         new WOW().init();
+
+        $(document).ready(function () {
+            $('#brif-form').validate({
+                errorClass: "invalid",
+                errorElement: "div",
+                focusInvalid: false,
+                rules: {
+                    username: {
+                        required: true,
+                        minlength: 2,
+                        maxlength: 15,
+                        lettersonly: true
+                    },
+                    phone: {
+                        required: true
+                    }
+                },
+                messages: {
+                    username: {
+                        required: "Введите имя",
+                        minlength: jQuery.validator.format("Символов осталось: {0} "),
+                    },
+                    phone: {
+                        required: "Введите номер телефона",
+
+                    }
+                }
+            });
+            $('#form').validate({
+                errorClass: "invalid",
+                errorElement: "div",
+                focusInvalid: false,
+                rules: {
+                    username: {
+                        required: true,
+                        minlength: 2,
+                        maxlength: 15,
+                        lettersonly: true
+                    },
+                    phone: {
+                        required: true
+                    }
+                },
+                messages: {
+                    username: {
+                        required: "Введите имя",
+                        minlength: jQuery.validator.format("Символов осталось: {0} "),
+                    },
+                    phone: {
+                        required: "Введите номер телефона",
+
+                    }
+                }
+            });
+        });
+
         $('.owl-carousel').owlCarousel({
             loop: true,
             margin: 10,

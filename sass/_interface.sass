@@ -12,6 +12,9 @@ img
     border-radius: 10px
     border: 1px solid $input-color
     padding: 25px
+    &:focus
+        outline: none
+        border-color: $main-color
 .a
     text-decoration: none
     color: $text-color
@@ -28,9 +31,10 @@ img
     justify-content: space-between
     max-width: 120px
     margin: auto
-.fadeInLeft
-    animation: fadeInLeft 1.5s
-    
+
+.invalid
+    border-color: red
+
 @media(max-width: 1200px)
     .container
         width: 760px

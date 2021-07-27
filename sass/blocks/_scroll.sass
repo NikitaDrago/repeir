@@ -16,10 +16,19 @@
     &:hover
         cursor: pointer
         background: $main-color
-    &__img
-        height: 35px
-        width: 35px
 .arrow
     &_up
         transition: 0.5s
         transform: rotate(0deg)
+    &__img
+        height: 35px
+        width: 35px
+
+@media(max-width: 768px)
+    .scroll
+        height: 35px
+        width: 35px
+    .arrow
+        &__img
+            height: 25px
+            width: 25px
