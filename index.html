@@ -70,10 +70,9 @@
                         </h2>
                         <span class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
                         <form action="#" id="form">
-                            <input type="text" name="username"
-                                class="input form__input form__input_data" placeholder="Ваше имя">
-                            <input type="tel" name="phone" class="input form__input phone"
-                                placeholder="Ваш телефон">
+                            <input type="text" name="username" class="input form__input form__input_data"
+                                placeholder="Ваше имя">
+                            <input type="tel" name="phone" class="input form__input phone" placeholder="Ваш телефон">
                             <button class="button form__button">Получить бесплатный дизайн-проект</button>
                         </form>
                         <div class="form-data">
@@ -302,8 +301,8 @@
                             расчет ремонта по телефону</h3>
                         <span class="brif-form__subtitle">Для этого заполните форму ниже</span>
                         <form action="#" id='brif-form'>
-                            <input type="text" name="username"
-                                class="input brif-form__input brif-form__input_data" placeholder="Ваше имя">
+                            <input type="text" name="username" class="input brif-form__input brif-form__input_data"
+                                placeholder="Ваше имя">
                             <input type="tel" name="phone" class="input brif-form__input phone"
                                 placeholder="Ваш телефон">
                             <button class="button brif-form__button">Рассчитать стоимость</button>
@@ -314,9 +313,49 @@
             </div>
             </div>
         </section>
-
         </div>
     </main>
+    <footer class="footer">
+        <div class="map" id="map">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa73db24385e545d4ae3968b049f33483c1824603aa32e7846684bedaac84561c&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <div class="container">
+            <div class="contacts-block">
+                <div class="contacts">
+                    <h3 class="contacts__title">
+                        Приезжайте к нам в гости! Проконсультируем Вас по всем вопросам ремонта
+                    </h3>
+                    <ul class="contacts-list">
+                        <li class="li contacts-list__item">
+                            <span class="contacts-list__icon">
+                                <img src="img/map-placeholder.png" alt="">
+                            </span>
+                            <span class="contacts-list__text">г. Москва<br>
+                                <span class="bold">ул. Ленинга, д. 10, корпус 2, оф. 308</span>
+                            </span>
+                        </li>
+                        <li class="li contacts-list__item">
+                            <span class="contacts-list__icon">
+                                <img src="img/clock-with-white-face.png" alt="">
+                            </span>
+                            <span class="contacts-list__text">Режим работы:<br>
+                                <span class="bold">с 9:00 до 18:00</span>
+                            </span>
+                        </li>
+                        <li class="li contacts-list__item">
+                            <span class="contacts-list__icon">
+                                <img src="img/phone-call-button.png" alt="">
+                            </span>
+                            <span class="contacts-list__text">Телефон:<br>
+                                <a href="tel:+7 (495) 42-251-31" class="contacts-list__phone a">+ 7 (495) 42-251-31</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <div class="modal" id="modal">
         <div class="modal-dialog">
             <button class="modal-dialog__close" id="closeModal">&times;</button>

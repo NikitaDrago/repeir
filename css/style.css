@@ -29,6 +29,10 @@ img {
   max-width: 100%;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .container {
   width: 1170px;
   margin: 0 auto;
@@ -1114,7 +1118,6 @@ img {
 
 .help-list {
   margin-top: 103px;
-  list-style-type: none;
   padding: 0;
 }
 
@@ -1209,6 +1212,8 @@ img {
   .brif-form__description {
     font-size: 14px;
     max-width: 135px;
+    margin: auto;
+    margin-top: 31px;
   }
   .help-list {
     margin-top: 51px;
@@ -1216,6 +1221,104 @@ img {
   .help-list__text {
     max-width: 231px;
     margin-left: 8px;
+  }
+}
+
+.footer {
+  position: relative;
+  min-width: 320px;
+}
+
+.map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts__title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 100px;
+}
+
+.contacts-list {
+  padding: 0;
+}
+
+.contacts-list__text {
+  max-width: 150px;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 39px;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin-right: 23px;
+}
+
+.contacts-list__phone {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.bold {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .map {
+    margin-top: 460px;
+    width: 100%;
+  }
+  .contacts {
+    margin-left: 25px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-top: 67px;
+    padding-left: 0;
+    padding-bottom: 63px;
+  }
+  .contacts__title {
+    font-size: 18px;
+    line-height: normal;
+    margin-bottom: 39px;
+    max-width: 240px;
   }
 }
 /*# sourceMappingURL=style.css.map */
