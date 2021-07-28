@@ -79,9 +79,13 @@ ul {
 
 .invalid {
   border-color: red;
+  position: absolute;
 }
 
 @media (max-width: 1200px) {
+  .invalid {
+    position: static;
+  }
   .container {
     width: 760px;
   }
@@ -332,6 +336,7 @@ ul {
 
 .form__input {
   width: 240px;
+  position: relative;
 }
 
 .form__input_data {
@@ -375,6 +380,13 @@ ul {
   font-weight: 700;
 }
 
+.wrapper-input {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (max-width: 1200px) {
   .form {
     background-size: cover;
@@ -386,6 +398,12 @@ ul {
   .form-data {
     width: 85%;
   }
+  .wrapper-input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
@@ -393,6 +411,9 @@ ul {
     background: #fff;
     padding-top: 53px;
     padding-bottom: 55px;
+  }
+  .form-block {
+    text-align: center;
   }
   .form-wrapper {
     text-align: left;
@@ -1093,12 +1114,17 @@ ul {
   margin: 50px 0;
 }
 
+.brif-form__block {
+  position: relative;
+}
+
 .brif-form__input {
   width: 370px;
+  position: relative;
 }
 
 .brif-form__input_data {
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .brif-form__button {
@@ -1114,6 +1140,13 @@ ul {
   font-size: 15px;
   margin-top: 33px;
   margin-bottom: 0;
+}
+
+.brif-form-wrapper-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
 }
 
 .help-list {
@@ -1149,6 +1182,9 @@ ul {
   }
   .brif-form__input {
     width: 290px;
+  }
+  .brif-form__input_data {
+    margin-top: 8px;
   }
   .brif-form__button {
     width: 290px;

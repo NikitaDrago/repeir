@@ -28,8 +28,10 @@
         max-width: 250px
         margin-top: 24px
         margin-bottom: 30px
+
     &__input
         width: 240px
+        position: relative
         &_data
             margin-right: 8px
     &__button
@@ -50,6 +52,10 @@
         display: block
         font-size: 15px
         +bold
+.wrapper
+    &-input
+        position: relative
+        display: flex
 @media(max-width: 1200px)
     .form
         background-size: cover
@@ -58,11 +64,15 @@
             margin-bottom: 10px
         &-data
             width: 85%
+    .wrapper-input
+        flex-direction: column
 @media(max-width: 768px)
     .form
         background: #fff
         padding-top: 53px
         padding-bottom: 55px
+        &-block
+            text-align: center
         &-wrapper
             text-align: left
             width: 95%

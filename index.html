@@ -69,10 +69,17 @@
                         <h2 class="form__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
                         </h2>
                         <span class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
-                        <form action="#" id="form">
-                            <input type="text" name="username" class="input form__input form__input_data"
-                                placeholder="Ваше имя">
-                            <input type="tel" name="phone" class="input form__input phone" placeholder="Ваш телефон">
+                        <form action="#" id="form" class="form-block">
+                            <div class="wrapper-input">
+                                <div>
+                                    <input type="text" name="username" class="input form__input form__input_data"
+                                        placeholder="Ваше имя">
+                                </div>
+                                <div>
+                                    <input type="tel" name="phone" class="input form__input phone"
+                                        placeholder="Ваш телефон">
+                                </div>
+                            </div>
                             <button class="button form__button">Получить бесплатный дизайн-проект</button>
                         </form>
                         <div class="form-data">
@@ -300,11 +307,17 @@
                         <h3 class="brif-form__title">Оставьте заявку на бесплатный
                             расчет ремонта по телефону</h3>
                         <span class="brif-form__subtitle">Для этого заполните форму ниже</span>
-                        <form action="#" id='brif-form'>
-                            <input type="text" name="username" class="input brif-form__input brif-form__input_data"
-                                placeholder="Ваше имя">
-                            <input type="tel" name="phone" class="input brif-form__input phone"
-                                placeholder="Ваш телефон">
+                        <form action="#" id='brif-form' class="brif-form__block">
+                            <div class="brif-wrapper-input">
+                                <div>
+                                    <input type="text" name="username" class="input brif-form__input"
+                                    placeholder="Ваше имя">
+                                </div>
+                                <div>
+                                    <input type="tel" name="phone" class="input brif-form__input brif-form__input_data phone"
+                                    placeholder="Ваш телефон">
+                                </div>
+                            </div>
                             <button class="button brif-form__button">Рассчитать стоимость</button>
                             <p class="brif-form__description">Мы перезвоним Вам в течение 60 секунд</p>
                         </form>
