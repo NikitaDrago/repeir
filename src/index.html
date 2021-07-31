@@ -394,14 +394,11 @@
                 errorClass: "invalid",
                 errorElement: "div",
                 focusInvalid: false,
-                success: "valid",
-                submitHandler: function () { alert("Submitted!") },
                 rules: {
                     username: {
                         required: true,
-                        minlength: 2,
-                        maxlength: 15,
-                        lettersonly: true
+                        rangelength: [2, 15],
+                        lateronly: true
                     },
                     phone: {
                         required: true
@@ -410,8 +407,7 @@
                 messages: {
                     username: {
                         required: "Введите имя",
-                        minlength:  ("Символов осталось: {0} "),
-                        maxlength:  ("Введите не более 15 символов"),
+                        rangelength: "Введите значение длиной от 2 до 15 символов."
                     },
                     phone: {
                         required: "Введите номер телефона",
@@ -424,14 +420,11 @@
                 errorClass: "invalid",
                 errorElement: "div",
                 focusInvalid: false,
-                success: "valid",
-                submitHandler: function () { alert("Submitted!") },
                 rules: {
                     username: {
                         required: true,
-                        minlength: 2,
-                        maxlength: 15,
-                        lettersonly: true
+                        rangelength: [2, 15],
+                        lateronly: true
                     },
                     phone: {
                         required: true
@@ -440,11 +433,10 @@
                 messages: {
                     username: {
                         required: "Введите имя",
-                        minlength: jQuery.validator.format("Символов осталось: {0} "),
+                        rangelength: "Введите значение длиной от 2 до 15 символов."
                     },
                     phone: {
                         required: "Введите номер телефона",
-
                     }
                 }
             });
