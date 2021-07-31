@@ -78,8 +78,9 @@ ul {
 }
 
 .invalid {
+  color: red;
+  margin: 5px;
   border-color: red;
-  position: absolute;
 }
 
 @media (max-width: 1200px) {
@@ -1124,7 +1125,7 @@ ul {
 }
 
 .brif-form__input_data {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .brif-form__button {

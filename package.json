@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "urix": "^0.1.0"
+  },
+  "name": "repeir",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikitaDrago/repeir.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikitaDrago/repeir/issues"
+  },
+  "homepage": "https://github.com/NikitaDrago/repeir#readme",
+  "description": ""
+}

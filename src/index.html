@@ -311,11 +311,12 @@
                             <div class="brif-wrapper-input">
                                 <div>
                                     <input type="text" name="username" class="input brif-form__input"
-                                    placeholder="Ваше имя">
+                                        placeholder="Ваше имя">
                                 </div>
                                 <div>
-                                    <input type="tel" name="phone" class="input brif-form__input brif-form__input_data phone"
-                                    placeholder="Ваш телефон">
+                                    <input type="tel" name="phone"
+                                        class="input brif-form__input brif-form__input_data phone"
+                                        placeholder="Ваш телефон">
                                 </div>
                             </div>
                             <button class="button brif-form__button">Рассчитать стоимость</button>
@@ -393,6 +394,8 @@
                 errorClass: "invalid",
                 errorElement: "div",
                 focusInvalid: false,
+                success: "valid",
+                submitHandler: function () { alert("Submitted!") },
                 rules: {
                     username: {
                         required: true,
@@ -407,11 +410,11 @@
                 messages: {
                     username: {
                         required: "Введите имя",
-                        minlength: jQuery.validator.format("Символов осталось: {0} "),
+                        minlength:  ("Символов осталось: {0} "),
+                        maxlength:  ("Введите не более 15 символов"),
                     },
                     phone: {
                         required: "Введите номер телефона",
-
                     }
                 }
             });
